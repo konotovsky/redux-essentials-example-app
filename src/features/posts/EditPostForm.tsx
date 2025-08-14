@@ -30,7 +30,6 @@ export const EditPostForm = () => {
   }
 
   const onSavePostClicked = (e: React.FormEvent<EditPostFormElements>) => {
-    // Prevent server submission
     e.preventDefault()
 
     const { elements } = e.currentTarget
