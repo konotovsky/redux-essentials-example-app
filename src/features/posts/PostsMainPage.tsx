@@ -1,5 +1,11 @@
+import { AddPostForm } from './AddPostForm'
 import { PostsList } from './PostsList'
 
 export const PostsMainPage = () => {
-  return <PostsList />
+  return (
+    <>
+      <AddPostForm />
+      <PostsList />
+    </>
+  )
 }
