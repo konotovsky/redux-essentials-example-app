@@ -26,4 +26,6 @@ const authSlice = createSlice({
 
 export const { userLoggedIn, userLoggedOut } = authSlice.actions
 
+export const { selectCurrentUsername } = authSlice.selectors
+
 export default authSlice.reducer
