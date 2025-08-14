@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-
 interface User {
   id: string
   name: string
@@ -21,5 +20,7 @@ const usersSlice = createSlice({
     selectUserById: (usersState, userId: string) => usersState.find((user) => user.id === userId),
   },
 })
+
+export const { selectAllUsers, selectUserById } = usersSlice.selectors
 
 export default usersSlice.reducer
